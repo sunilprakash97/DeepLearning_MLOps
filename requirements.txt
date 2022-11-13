@@ -7,7 +7,6 @@ django
 dvc
 flake8
 gunicorn
-h5py
 joblib
 jupyterlab
 keras
@@ -20,4 +19,3 @@ pandas
 python-dotenv>=0.5.1
 scikit-learn
 seaborn
-# tensorflow
