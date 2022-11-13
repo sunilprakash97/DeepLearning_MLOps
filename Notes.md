@@ -83,11 +83,15 @@ Note:
 
 	***NOTE***
 		Run the MLflow server first and then run the django server
-	***TroubleShoot**
-		Train the model again	
+	***TroubleShoot***
+		Train the model_train.py again	
 
 	To run the firstApp, need to be in the webapp directory
-	1. cmd: python manage.py runserver
+	1. cmd: mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 127.0.0.1 -p 5000
+	2. cmd: python manage.py runserver
+
+Future Scope:
+1. Find a way to use the latest production stage model into the Django App
 
 
 Notes:
@@ -96,3 +100,4 @@ Notes:
 	
 Errors Faced
 1. .DS_Store -> go to directory: find . -name '.DS_Store' -type f -delete
+2. kill the server: npx kill-port 5000
